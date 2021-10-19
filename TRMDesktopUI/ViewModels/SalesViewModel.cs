@@ -89,7 +89,7 @@ namespace TRMDesktopUI.ViewModels
         {
             get
             {
-                return CalculateSubTotal().ToString("C", new CultureInfo("en-US"));
+                return CalculateSubTotal().ToString("C");
             }
         }
 
@@ -121,7 +121,7 @@ namespace TRMDesktopUI.ViewModels
         {
             get
             {
-                return CalculateTax().ToString("C", new CultureInfo("en-US"));
+                return CalculateTax().ToString("C");
             }
         }
 
@@ -130,7 +130,7 @@ namespace TRMDesktopUI.ViewModels
             get
             {
                 decimal total = CalculateSubTotal() + CalculateTax();
-                return total.ToString("C", new CultureInfo("en-US"));
+                return total.ToString("C");
             }
         }
 
