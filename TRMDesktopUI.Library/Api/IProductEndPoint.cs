@@ -4,7 +4,7 @@ using TRMDesktopUI.Library.Models;
 
 namespace TRMDesktopUI.Library.Api
 {
-    public interface IProductEndPoint
+    public interface IProductEndpoint
     {
         Task<List<ProductModel>> GetAll();
     }
