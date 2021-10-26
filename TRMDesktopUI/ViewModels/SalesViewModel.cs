@@ -61,7 +61,7 @@ namespace TRMDesktopUI.ViewModels
                     await _window.ShowDialogAsync(_status, null, settings);
                 }
                 
-                TryCloseAsync();
+                await TryCloseAsync();
             }
         }
 

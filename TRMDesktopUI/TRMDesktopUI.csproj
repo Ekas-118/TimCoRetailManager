@@ -6,9 +6,9 @@
 	</PropertyGroup>
 	<ItemGroup>
 	  <PackageReference Include="AutoMapper" Version="10.1.1" />
-	  <PackageReference Include="Caliburn.Micro" Version="4.0.173" />
-	  <PackageReference Include="Caliburn.Micro.Core" Version="4.0.173" />
-	  <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.37" />
+	  <PackageReference Include="Caliburn.Micro" Version="4.0.105-alpha" />
+	  <PackageReference Include="Caliburn.Micro.Core" Version="4.0.105-alpha" />
+	  <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.19" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\TRMDesktopUI.Library\TRMDesktopUI.Library.csproj" />

@@ -24,7 +24,7 @@ namespace TRMDesktopUI.ViewModels
             _apiHelper = apiHelper;
 
             _events.SubscribeOnPublishedThread(this);
-            ActivateItemAsync(IoC.Get<LoginViewModel>());
+            ActivateItemAsync(IoC.Get<LoginViewModel>(), new CancellationToken());
         }
 
         public bool IsLoggedIn
@@ -49,20 +49,20 @@ namespace TRMDesktopUI.ViewModels
 
         public async Task UserManagement()
         {
-            await ActivateItemAsync(IoC.Get<UserDisplayViewModel>());
+            await ActivateItemAsync(IoC.Get<UserDisplayViewModel>(), new CancellationToken());
         }
 
         public async Task LogOut()
         {
             _user.ResetUserModel();
             _apiHelper.LogOffUser();
-            await ActivateItemAsync(IoC.Get<LoginViewModel>());
+            await ActivateItemAsync(IoC.Get<LoginViewModel>(), new CancellationToken());
             NotifyOfPropertyChange(() => IsLoggedIn);
         }
 
         public async Task HandleAsync(LogOnEvent message, CancellationToken cancellationToken)
         {
-            await ActivateItemAsync(IoC.Get<SalesViewModel>());
+            await ActivateItemAsync(IoC.Get<SalesViewModel>(), new CancellationToken());
             NotifyOfPropertyChange(() => IsLoggedIn);
         }
     }
