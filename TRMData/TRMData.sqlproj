@@ -78,4 +78,7 @@
     <Build Include="dbo\Stored Procedures\spInventory_Insert.sql" />
     <Build Include="dbo\Stored Procedures\spSale_SaleReport.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="TRMData.publish.xml" />
+  </ItemGroup>
 </Project>
