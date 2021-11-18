@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TRMData", "TRMData\TRMData.sqlproj", "{34521939-EAD7-45EF-A548-C40A956BB388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRMDesktopUI", "TRMDesktopUI\TRMDesktopUI.csproj", "{D7331C9D-C6A2-40EB-B87A-4205EC7424EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TRMDesktopUI", "TRMDesktopUI\TRMDesktopUI.csproj", "{D7331C9D-C6A2-40EB-B87A-4205EC7424EB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TRMDataManager.Library", "TRMDataManager.Library\TRMDataManager.Library.csproj", "{E1DF6A42-EA03-47E3-8800-F1F947E7B555}"
 EndProject
@@ -23,6 +23,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		Roadmap.txt = Roadmap.txt
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{5EF6E758-37BB-48A1-8F72-45D3208EDCC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal", "Portal\Portal.csproj", "{753BFF71-CBF1-4F95-A538-C7D83755D095}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +56,10 @@ Global
 		{28E77C5C-B396-4A11-9371-EF8D7CB7A0A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28E77C5C-B396-4A11-9371-EF8D7CB7A0A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28E77C5C-B396-4A11-9371-EF8D7CB7A0A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{753BFF71-CBF1-4F95-A538-C7D83755D095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753BFF71-CBF1-4F95-A538-C7D83755D095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753BFF71-CBF1-4F95-A538-C7D83755D095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753BFF71-CBF1-4F95-A538-C7D83755D095}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +70,7 @@ Global
 		{E1DF6A42-EA03-47E3-8800-F1F947E7B555} = {A24731F2-E195-4A86-A6A1-B0DA1FBF3D61}
 		{28363C1C-DEB5-4C53-AA9A-670780BE2469} = {C159FF5E-9951-4DD1-BF61-3D329BA2595C}
 		{28E77C5C-B396-4A11-9371-EF8D7CB7A0A5} = {A24731F2-E195-4A86-A6A1-B0DA1FBF3D61}
+		{753BFF71-CBF1-4F95-A538-C7D83755D095} = {5EF6E758-37BB-48A1-8F72-45D3208EDCC7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38EA45E5-0CA8-4D29-B83A-9F247FA9BF73}
