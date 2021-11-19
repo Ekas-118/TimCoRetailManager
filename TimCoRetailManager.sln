@@ -26,7 +26,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{5EF6E758-37BB-48A1-8F72-45D3208EDCC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal", "Portal\Portal.csproj", "{753BFF71-CBF1-4F95-A538-C7D83755D095}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal", "Portal\Portal.csproj", "{753BFF71-CBF1-4F95-A538-C7D83755D095}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
