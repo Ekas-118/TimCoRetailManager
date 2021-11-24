@@ -1,12 +1,7 @@
 ﻿using Caliburn.Micro;
-using Microsoft.Extensions.Configuration;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using TRMDesktopUI.EventModels;
-using TRMDesktopUI.Helpers;
 using TRMDesktopUI.Library.Api;
 
 namespace TRMDesktopUI.ViewModels
@@ -16,7 +11,7 @@ namespace TRMDesktopUI.ViewModels
         private string _userName;
         private string _password;
         private string _errorMessage;
-        private readonly  IAPIHelper _apiHelper;
+        private readonly IAPIHelper _apiHelper;
         private readonly IEventAggregator _events;
 
         public LoginViewModel(IAPIHelper apiHelper, IEventAggregator events)

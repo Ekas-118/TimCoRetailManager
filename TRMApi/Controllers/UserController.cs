@@ -1,11 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
@@ -47,9 +43,9 @@ namespace TRMApi.Controllers
         }
 
         public record UserRegistrationModel(
-            string FirstName, 
-            string LastName, 
-            string EmailAddress, 
+            string FirstName,
+            string LastName,
+            string EmailAddress,
             string Password);
 
         [HttpPost]
@@ -143,7 +139,7 @@ namespace TRMApi.Controllers
 
             var user = await _userManager.FindByIdAsync(pairing.UserId);
 
-            _logger.LogInformation("Admin {Admin} added user {User} to role {Role}", 
+            _logger.LogInformation("Admin {Admin} added user {User} to role {Role}",
                 loggedInUserId, user.Id, pairing.RoleName);
 
             await _userManager.AddToRoleAsync(user, pairing.RoleName);

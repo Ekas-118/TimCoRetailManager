@@ -5,9 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Dynamic;
-using System.Globalization;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using TRMDesktopUI.Library.Api;
@@ -60,7 +58,7 @@ namespace TRMDesktopUI.ViewModels
                     _status.UpdateMessage("Fatal Exception", ex.Message);
                     await _window.ShowDialogAsync(_status, null, settings);
                 }
-                
+
                 await TryCloseAsync();
             }
         }

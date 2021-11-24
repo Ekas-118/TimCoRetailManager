@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Caliburn.Micro;
 using System.Threading;
 using System.Threading.Tasks;
-using Caliburn.Micro;
 using TRMDesktopUI.EventModels;
 using TRMDesktopUI.Library.Api;
 using TRMDesktopUI.Library.Models;
